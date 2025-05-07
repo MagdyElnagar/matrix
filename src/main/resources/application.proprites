@@ -1,0 +1,64 @@
+
+
+jwt.secret:ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SmhkV1FpT2lKVmMyVnlJRTFoYm1GblpXMWxiblFnVUc5eWRHRnNJaXdpYzNWaUlqb2lZV1J0YVc0aUxDSnBjM01pT2lKSFpYUWdRWEp5WVhsekxDQk1URU1pTENKbGVIQWlPakUyTWprME56RTFNakVzSW1saGRDSTZNVFl5T1RBek9UVXlNU3dpWVhWMGFHOXlhWFJwWlhNaU9sc2lkWE5sY2pweVpXRmtJbDE5LkVBYUwydE9INTlsWlBCSFI4alBJTFZ4TG5qNVNocExlU3dOQUlPdnBjTXhRM25ZRHJyVV9HaFBYTkwyMlh3Uk9jWUJtU3VOaWs3Y3NZVkMxd1ZPY2pB
+user.ip:1.1.1.1
+#heroku host
+#spring.datasource.url=jdbc:postgresql://ec2-52-45-83-163.compute-1.amazonaws.com:5432/d69u03eejt5r86?sslmode=require
+#spring.datasource.username=nxcclhoklsxdmv
+#spring.datasource.password=6686cf9c9f2d99d670a75cf72cc173971afa88fbfe1a986fbae0a93116b4e713
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
+
+#free sql host if 
+#spring.datasource.url=jdbc:mysql://db4free.net:3306/anubisarray
+#spring.datasource.username=magdyelnagar
+#spring.datasource.password=1302118441980
+
+##this option if server db and api db version not match 
+#spring.jpa.database-platform=org.hibernate.dialect.MariaDB8Dialect
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+#spring.jpa.properties.hibernate.globally_quoted_identifiers=true
+
+
+spring.datasource.driverClassName = com.mysql.cj.jdbc.Driver
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/erpmatrix?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=root
+#spring.datasource.url=jdbc:mysql://196.218.167.30:3306/erpmatrix?useSSL=false
+#spring.datasource.username=root
+#spring.datasource.password=root
+
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect
+
+spring.jpa.properties.hibernate.dialect =org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.generate-ddl = true
+net.sf.jasperreports.default.font.name=Arial
+net.sf.jasperreports.default.pdf.encoding=Identity-H
+net.sf.jasperreports.default.pdf.embedded=TRUE
+
+
+spring.datasource.initialization-mode=always
+spring.datasource.continue-on-error=true
+spring.mvc.throw-exception-if-no-handler-found= true
+spring.web.resources.add-mappings=false
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+#spring.jackson.date-format=dd-MM-yyyy | HH:mm
+spring.jackson.time-zone=Africa/Cairo
+spring.main.banner-mode=off 
+spring.output.ansi.enabled=always
+spring.servlet.multipart.max-file-size=1000MB
+spring.servlet.multipart.max-request-size=1000MB
+spring.servlet.multipart.enabled=true
+spring.http.multipart.enabled=true
+spring.jpa.properties.hibernate.jdbc.batch_size=5
+server.port=8080
+# Thymeleaf configuration
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.mode=HTML
+spring.thymeleaf.cache=false # للتطوير فقط
